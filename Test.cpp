@@ -192,4 +192,18 @@ TEST_CASE("Test replacement of d and t") {
     CHECK(find(text2, "drasidion") == string("trasition"));
     CHECK(find(text2, "trasidion") == string("trasition"));
 }
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////Wrong word//////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 
+TEST_CASE("Test if the word is in the sentence") {
+    
+    string text = "xxx happy yyy";
+    CHECK_THROWS(find(text, "happ"));
+    
+    string text2 = "xxx worry yyy";
+    CHECK_THROWS(find(text, "worr"));
+    
+    string text3 = "xxx worry yyy";
+    CHECK_THROWS(find(text, "dont"));
+}
