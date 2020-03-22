@@ -1,6 +1,8 @@
 /**
  * Demo program for Gimatriya calculation.
  * 
+ * Author: Dolev Saliman
+ * 
  * Date: 2020-02
  */
 
