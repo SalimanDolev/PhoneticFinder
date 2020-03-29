@@ -182,15 +182,15 @@ TEST_CASE("Test replacement of d and t") {
 
 
     string text3 = "xxx tradition yyy";
-    CHECK(find(text, "dradition") == string("tradition"));
-    CHECK(find(text, "tratition") == string("tradition"));
-    CHECK(find(text, "dradidion") == string("tradition"));
-    CHECK(find(text, "tradidion") == string("tradition"));
+    CHECK(find(text3, "dradition") == string("tradition"));
+    CHECK(find(text3, "tratition") == string("tradition"));
+    CHECK(find(text3, "dradidion") == string("tradition"));
+    CHECK(find(text3, "tradidion") == string("tradition"));
 
      string text4 = "xxx trasition yyy";
-    CHECK(find(text2, "drasition") == string("trasition"));
-    CHECK(find(text2, "drasidion") == string("trasition"));
-    CHECK(find(text2, "trasidion") == string("trasition"));
+    CHECK(find(text4, "drasition") == string("trasition"));
+    CHECK(find(text4, "drasidion") == string("trasition"));
+    CHECK(find(text4, "trasidion") == string("trasition"));
 }
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////Wrong word//////////////////////////////
